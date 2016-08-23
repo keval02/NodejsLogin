@@ -1,0 +1,42 @@
+<h2 class="page-header">Account Login </h2>
+{{#if errors}}
+	{{#each errors}}
+		<div class="alert alert-danger">{{msg}}</div>
+		{{/each}}
+{{/if}}
+
+
+
+
+<form method="post" action="/users/register">
+
+<div class = "form-group">
+<label>Name</label>
+<input type = "text" class="form-control"
+placeholder="Name" name="name">
+
+<div class = "form-group">
+<label>Username</label>
+<input type = "text" class="form-control"
+placeholder="Username" name="username">
+</div>
+
+<div class = "form-group">
+<label>Email_id</label>
+<input type = "email" class="form-control"
+placeholder="Email_id" name="email">
+
+<div class="form-group">
+<label>Password</label>
+<input type="password" class="form-control"
+placeholder="Password" name=password>
+</div>
+
+
+<div class="form-group">
+<label>Repeat Password</label>
+<input type="password" class="form-control"
+placeholder="Password" name=password2>
+
+<button type="submit" class="btn btn-default">Submit</button>
+</form>
